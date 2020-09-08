@@ -95,13 +95,7 @@ func run(ctx context.Context, org string) error {
 				if !ok {
 					// There's no more PRs, so just wait for all of the approved
 					// merges to finish.
-					fmt.Println("Waiting for merge commands to be sent ...")
-					if err := g.Wait(); err != nil {
-						return err
-					}
-
-					fmt.Println("Done")
-					return nil
+					return g.Wait()
 				}
 
 				matches := titleRegex.FindStringSubmatch(pr.GetTitle())
