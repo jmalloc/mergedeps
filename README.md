@@ -2,7 +2,7 @@
 
 This is a quick-and-dirty CLI tool for quickly merging Dependabot PRs in bulk.
 
-- Install via `GO111MODULE=off go get -u github.com/jmalloc/mergedeps/...`
+- Install via `go install github.com/jmalloc/mergedeps@latest`
 - Set a `GITHUB_TOKEN` environment variable to a personal-access-token that has merge permissions.
 - Run `mergedeps <org name>`
 

@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/go-github/v32/github"
+	"github.com/google/go-github/v38/github"
 	"golang.org/x/oauth2"
 	"golang.org/x/sync/errgroup"
 )

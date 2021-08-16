@@ -1,7 +1,7 @@
 -include .makefiles/Makefile
 -include .makefiles/pkg/go/v1/Makefile
 
-run: artifacts/build/debug/$(GOHOSTOS)/$(GOHOSTARCH)/mergedeps
+run: $(GO_DEBUG_DIR)/mergedeps
 	$< $(RUN_ARGS)
 
 .makefiles/%:
